@@ -259,7 +259,8 @@
 }
 
 .main-slider-one{
-background: url(../../../i.pinimg.com/originals/f3/a8/a5/f3a8a5ed6c2e51789051e0be8667dc73.jpg);
+  /* background: url(../../../i.pinimg.com/originals/f3/a8/a5/f3a8a5ed6c2e51789051e0be8667dc73.jpg); */
+background: url(../images/backgrounds/back-fixed.png);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
