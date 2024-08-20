@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Payment Test</title>
+    <!-- Include PayPal's JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AWSrt6H3KZ7UJvpeauCD61B0seGtOmL2vwNv5AzDHmlszrLfL14nlNLlc1tHshPY6sShM3BV2QuphDgC"></script>
+</head>
+<body>
+
+<h2>PayPal Payment Integration</h2>
+
+<!-- PayPal Button Container -->
+<div id="paypal-button-container"></div>
+
+<script>
+    paypal.Buttons({
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '1.00' // The amount to charge, for testing
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                // Successful payment, handle the response here
+                alert('Transaction completed by ' + details.payer.name.given_name);
+                console.log(details); // This will log the transaction details
+            });
+        },
+        onError: function (err) {
+            // Handle errors
+            console.error(err);
+            alert('An error occurred during the transaction.');
+        }
+    }).render('#paypal-button-container'); // Display the PayPal button
+</script>
+
+</body>
+</html>

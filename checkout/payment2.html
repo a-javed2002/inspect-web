@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from inspecthistoryGlobal.com/checkout/payment.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jul 2024 13:48:19 GMT -->
+<!-- Mirrored from inspecthistoryusa.com/checkout/payment.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jul 2024 13:48:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8" />
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
 
     <link href="../assets/payment/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://www.paypal.com/sdk/js?client-id=AWSrt6H3KZ7UJvpeauCD61B0seGtOmL2vwNv5AzDHmlszrLfL14nlNLlc1tHshPY6sShM3BV2QuphDgC"></script>
+
     <style>
         :root {
             --default-color: #d92d2d;
@@ -97,7 +97,7 @@
             <div class="row align-items-center">
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <a href="../index.html">
+                        <a href="#">
                             <img loading="lazy" src="../assets/images/logo.png" alt="Logo" />
                         </a>
                     </div>
@@ -106,7 +106,7 @@
                     <div class="header-menu">
                         <ul>
                             <li>
-                                <a href="tel:409 934 7322"><i class="fa fa-phone">&nbsp;</i>409 934 7322</a>
+                                <a href="tel:(303) 555-0105"><i class="fa fa-phone">&nbsp;</i>(303) 555-0105</a>
                             </li>
                         </ul>
                     </div>
@@ -119,11 +119,12 @@
         <div class="container">
             <div class="row mob-reverse">
                 <div class="col-md-8">
+
                     <div class="details-area">
                         <div class="loader-bg">
                             <i class="fa fa-spinner fa-spin loader-spin" aria-hidden="true"></i>
                         </div>
-                        <form id="checkout__form" method="post" action="https://inspecthistoryGlobal.com/checkout/process-payment.php">
+                        <form id="checkout__form" method="post" action="https://inspecthistoryusa.com/checkout/process-payment.php">
                             <div class="details-heading">
                                 <span class="desktop-num">1</span>
                                 <span class="mobile-num">2</span>
@@ -177,8 +178,8 @@
                                     <div class="col-md-6">
                                         <div class="detailsInput">
                                             <select name="country" id="country" class="form-control country" required autocomplete="country">
-                                                <option value="" selected disabled>Select Your Country</option>
-                                            </select>
+                                                                                                <option value="" selected disabled>Select Your Country</option>
+                                                                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -188,7 +189,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="detailsInput">
-                                            <input type="text" class="form-control city" id="city" name="city" placeholder="City" autocomplete="address-level2" value=""/>
+                                            <input type="text" class="form-control city" id="city" name="city" placeholder="City" autocomplete="address-level2"  value=""/>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -205,26 +206,87 @@
                                 <h2>Payment Information</h2>
                             </div>
                             <div class="details-input-area">
-                                <div class="row">
-                                    <div id="card-errors" class="text-danger mb-2" role="alert"></div>
-                            
+                                <div class="row ">
+                                                                        <div id="card-errors" class="text-danger mb-2" role="alert"></div>
+
                                     <div id="card-element" class="mb-2">
                                         <!-- A Stripe Element will be inserted here. -->
                                     </div>
-                            
+
+                                    <!-- Used to display form errors. -->
+<!--                                    <p id="errorContainer" class="text-danger card--error" ></p>-->
+<!--                                    <div class="col-6 mb-3">-->
+<!--                                        <div class="form-group">-->
+<!--                                            <input type="text" data-validation="required" class="form-control" name="card_number" placeholder="Card Number" id="card_number" minlength="12" maxlength="19">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-2 mb-3">-->
+<!--                                        <div class="form-group">-->
+<!--                                            <select id="exp_month" data-validation="required"  class="required month form-control" name="exp_month">-->
+<!--                                                <option value="">Month</option>-->
+<!--                                                <option value="01">January</option>-->
+<!--                                                <option value="02">February</option>-->
+<!--                                                <option value="03">March</option>-->
+<!--                                                <option value="04">April</option>-->
+<!--                                                <option value="05">May</option>-->
+<!--                                                <option value="06">June</option>-->
+<!--                                                <option value="07">July</option>-->
+<!--                                                <option value="08">August</option>-->
+<!--                                                <option value="09">September</option>-->
+<!--                                                <option value="10">October</option>-->
+<!--                                                <option value="11">November</option>-->
+<!--                                                <option value="12">December</option>-->
+<!--                                            </select>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-2 mb-3">-->
+<!--                                        <div class="form-group">-->
+<!--                                            <select id="exp_year" data-validation="required" class="required year form-control" name="exp_year" required>-->
+<!--                                                <option value="">Year</option>-->
+<!--                                                <option value="2019">2019</option>-->
+<!--                                                <option value="2020">2020</option>-->
+<!--                                                <option value="2021">2021</option>-->
+<!--                                                <option value="2022">2022</option>-->
+<!--                                                <option value="2023">2023</option>-->
+<!--                                                <option value="2024">2024</option>-->
+<!--                                                <option value="2025">2025</option>-->
+<!--                                                <option value="2026">2026</option>-->
+<!--                                                <option value="2027">2027</option>-->
+<!--                                                <option value="2028">2028</option>-->
+<!--                                                <option value="2029">2029</option>-->
+<!--                                                <option value="2030">2030</option>-->
+<!--                                                <option value="2031">2031</option>-->
+<!--                                                <option value="2032">2032</option>-->
+<!--                                                <option value="2033">2033</option>-->
+<!--                                                <option value="2034">2034</option>-->
+<!--                                                <option value="2035">2035</option>-->
+<!--                                                <option value="2036">2036</option>-->
+<!--                                                <option value="2037">2037</option>-->
+<!--                                                <option value="2038">2038</option>-->
+<!--                                                <option value="2039">2039</option>-->
+<!--                                                <option value="2040">2040</option>-->
+<!--                                                <option value="2041">2041</option>-->
+<!--                                                <option value="2042">2042</option>-->
+<!--                                                <option value="2043">2043</option>-->
+<!--                                            </select>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-2 mb-3">-->
+<!--                                        <div class="form-group">-->
+<!---->
+<!--                                            <input type="text" data-validation="required" name="cvc" class="form-control" placeholder="cvc" id="cvc" maxlength="4">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
                                     <div class="col-12 error-box" id="error-box"></div>
-                                    <div class="col-12" style="text-align: center;">
-                                        <!-- PayPal Button Container -->
-                                        <div id="paypal-button-container" style="display: inline-block;"></div>
-                                        <p style="font-size: 7px;">important: Please check and Read  that All of Your Information Is Correct and You are Authorizing This Payment Because once You Submitted Your Payment It will be Not Be refundable.</p>
+                                    <div class="col-12">
+                                        <button type="submit" id="chectout__form__submit__button" class="form-submit">Pay Now</button>
                                     </div>
                                 </div>
                             </div>
-                            
                         </form>
                     </div>
                 </div>
-    
+
                 <div class="col-md-4">
                     <div class="details-area">
                         <div class="details-heading">
@@ -240,12 +302,14 @@
                                 <span class="thickfont">Item Price</span>
                                 <b class="price--total">$</b>
                             </li>
+
+
                             <li>
                                 <span>Total (USD)</span>
                                 <strong class="price--total">$</strong>
                             </li>
                         </ul>
-    
+
                         <div class="coupon-div">
                             <div class="input-group">
                                 <input type="text" class="form-control coupon-code" placeholder="Promo code">
@@ -255,7 +319,7 @@
                             </div>
                             <div class="coupon-response-div"></div>
                         </div>
-    
+
                         <div class="complete">
                             <img src="../assets/images/4.jpg" alt="moneyback" />
                             <img src="../assets/images/5.png" alt="moneyback" />
@@ -265,32 +329,6 @@
             </div>
         </div>
     </section>
-    
-    <script>
-        paypal.Buttons({
-            createOrder: function(data, actions) {
-                return actions.order.create({
-                    purchase_units: [{
-                        amount: {
-                            value: '1.00' // The amount to charge, for testing
-                        }
-                    }]
-                });
-            },
-            onApprove: function(data, actions) {
-                return actions.order.capture().then(function(details) {
-                    // Successful payment, handle the response here
-                    alert('Transaction completed by ' + details.payer.name.given_name);
-                    console.log(details); // This will log the transaction details
-                });
-            },
-            onError: function (err) {
-                // Handle errors
-                console.error(err);
-                alert('An error occurred during the transaction.');
-            }
-        }).render('#paypal-button-container'); // Display the PayPal button
-    </script>
 
     <script src="../../code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="../../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js" ></script>
@@ -359,5 +397,5 @@
 </body>
 
 
-<!-- Mirrored from inspecthistoryGlobal.com/checkout/payment.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jul 2024 13:48:42 GMT -->
+<!-- Mirrored from inspecthistoryusa.com/checkout/payment.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jul 2024 13:48:42 GMT -->
 </html>
